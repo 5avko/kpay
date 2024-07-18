@@ -306,15 +306,15 @@ async def grant_free_subscription(message: types.Message, state: FSMContext):
     await state.finish()
 
 RANKS = [
-    ("Бронзовый", 20),
-    ("Серебряный", 30),
-    ("Золотой", 40)
+    ("Бронзовый", 60),
+    ("Серебряный", 130),
+    ("Золотой", 200)
 ]
 
 RANK_IMAGES = {
-    "Бронзовый": "/Users/workacc/bot_env/ranks/bronze.jpg",
-    "Серебряный": "/Users/workacc/bot_env/ranks/silver.jpg",
-    "Золотой": "/Users/workacc/bot_env/ranks/gold.jpg"
+    "Бронзовый": "bronze.jpg",
+    "Серебряный": "silver.jpg",
+    "Золотой": "gold.jpg"
 }
 
 def get_user_rank(deal_count):
